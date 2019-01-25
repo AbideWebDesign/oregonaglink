@@ -10,7 +10,7 @@
 					<div class="content-block h-100">
 						<div class="py-1 px-2 text-center">
 							
-							<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3173'); ?>
+							<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
 							
 							<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid rounded-circle mb-2 px-1')); ?>
 							
