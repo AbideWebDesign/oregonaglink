@@ -37,6 +37,12 @@
 			<?php get_template_part('template-parts/block', 'child-pages'); ?>
 		
 		<?php endif; ?>
+		
+		<?php if(get_row_layout() == 'gallery_block'): ?>
+
+			<?php get_template_part('template-parts/block', 'gallery'); ?>
+		
+		<?php endif; ?>
 	
 	<?php endwhile; ?>
 	

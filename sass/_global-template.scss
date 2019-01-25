@@ -480,6 +480,9 @@ h3.alt, h4.alt {
 		height: 66px;
 		line-height: 66px;	
 	}
+	li.active {
+		background-color: darken($brand-brown, 10);
+	}
 }
 /* 
 ** Component - Hero Banner 
@@ -654,6 +657,7 @@ h3.alt, h4.alt {
 				.gfield_label {
 					font-size: $font-size-lg;
 					color: $text-color;
+					font-weight: 500;
 				}
 				input, textarea {
 					border: none;
@@ -849,7 +853,23 @@ h3.alt, h4.alt {
 		}
 	}
 } 
- 
+/* 
+** Component -  Gallery
+*/ 
+.gallery-block {
+	h4 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-top: .5em;
+		line-height: $line-height-sm;
+		color: $gray-600;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
 /*
 ** Component - Forms
 */

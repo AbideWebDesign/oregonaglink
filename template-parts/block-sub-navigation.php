@@ -38,7 +38,7 @@
 				
 						<?php foreach($page_ids as $page): ?>
 						
-							<li class="list-inline-item">
+							<li class="list-inline-item <?php echo ($page['id'] == $post->ID ? 'active' : ''); ?>">
 								<a href="<?php echo get_the_permalink($page['id']); ?>"><?php echo $page['label']; ?></a>
 							</li>
 				
