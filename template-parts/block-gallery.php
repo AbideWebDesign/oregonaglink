@@ -41,7 +41,7 @@
 						
 						<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
 						
-						<a href="<?php the_sub_field('gallery_item_link'); ?>"><?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid w-100')); ?></a>
+						<a href="<?php the_sub_field('gallery_item_link'); ?>"><?php echo wp_get_attachment_image($image_id, 'col-4', false, array('class'=>'img-fluid w-100')); ?></a>
 						
 						<?php if (get_sub_field('gallery_item_title')): ?>
 						
