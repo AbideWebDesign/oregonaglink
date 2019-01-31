@@ -73,7 +73,8 @@ add_action( 'after_setup_theme', 'oregonaglink_setup' );
  * Enqueue scripts and styles.
  */
 function oregonaglink_scripts() {
-		
+	$theme = wp_get_theme();
+	
 	wp_deregister_script( 'jquery' );
 	
 	wp_register_script( 'jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, null );
@@ -86,7 +87,7 @@ function oregonaglink_scripts() {
 	
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
-	wp_enqueue_style( 'oregonaglink-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'oregonaglink-style', get_stylesheet_uri(), '', $theme->version );
 	
 	wp_enqueue_style( 'oregonaglink-font-1', 'https://fonts.googleapis.com/css?family=Montserrat:400,600' );
 	
