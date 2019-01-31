@@ -88,9 +88,9 @@ function oregonaglink_scripts() {
 
 	wp_enqueue_style( 'oregonaglink-style', get_stylesheet_uri() );
 	
-	wp_enqueue_style( 'oregonaglink-style', 'https://fonts.googleapis.com/css?family=Montserrat:400,600' );
+	wp_enqueue_style( 'oregonaglink-font-1', 'https://fonts.googleapis.com/css?family=Montserrat:400,600' );
 	
-	wp_enqueue_style( 'oregonaglink-style', 'https://fonts.googleapis.com/css?family=Arvo:400,700' );
+	wp_enqueue_style( 'oregonaglink-font-2', 'https://fonts.googleapis.com/css?family=Arvo:400,700' );
 }
 add_action( 'wp_enqueue_scripts', 'oregonaglink_scripts' );
 
