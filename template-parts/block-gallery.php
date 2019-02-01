@@ -55,13 +55,27 @@
 		<div class="row justify-content-center">
 	
 			<?php while(have_rows('gallery_items')): the_row(); ?>
-					
+				
+				<?php $link = get_sub_field('gallery_item_link'); ?>
+				
 				<div class="col-sm-6 col-md-4 col-lg-3 align-self-stretch mb-2">
 					<div class="content-block h-100">
 						
 						<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
 						
-						<a href="<?php the_sub_field('gallery_item_link'); ?>"><?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid w-100')); ?></a>
+						<?php if ($link): ?>
+					
+							<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
+								
+						<?php endif; ?>
+						
+						<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid w-100')); ?>
+						
+						<?php if ($link): ?>
+							
+							</a>
+							
+						<?php endif; ?>
 						
 						<?php if (get_sub_field('gallery_item_title')): ?>
 						
