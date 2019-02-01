@@ -30,6 +30,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_5c549731b586b",
+            "label": "Gallery with Image",
+            "name": "gallery_with_image",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5c4b3fbd18385",
             "label": "Gallery Items",
             "name": "gallery_items",
@@ -190,5 +209,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1549038077
+    "modified": 1549047637
 }

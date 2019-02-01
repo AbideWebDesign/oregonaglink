@@ -10,9 +10,13 @@
 					<div class="content-block h-100">
 						<div class="py-1 px-2 text-center">
 							
-							<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
+							<?php if (get_sub_field('gallery_with_image')): ?>
 							
-							<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid rounded-circle mb-2 px-1')); ?>
+								<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
+								
+								<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid rounded-circle mb-2 px-1')); ?>
+								
+							<?php endif ?>
 							
 							<h4><?php echo (get_sub_field('gallery_item_title') ? the_sub_field('gallery_item_title') : 'Placeholder Title'); ?></h4>
 							
@@ -61,26 +65,45 @@
 				<div class="col-sm-6 col-md-4 col-lg-3 align-self-stretch mb-2">
 					<div class="content-block h-100">
 						
-						<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
+						<?php if (get_sub_field('gallery_with_image')): ?>
 						
-						<?php if ($link): ?>
-					
-							<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
+							<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
+							
+							<?php if ($link): ?>
+						
+								<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
+									
+							<?php endif; ?>
+							
+							<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid w-100')); ?>
+							
+							<?php if ($link): ?>
 								
-						<?php endif; ?>
+								</a>
+								
+							<?php endif; ?>
 						
-						<?php echo wp_get_attachment_image($image_id, 'profile', false, array('class'=>'img-fluid w-100')); ?>
-						
-						<?php if ($link): ?>
-							
-							</a>
-							
 						<?php endif; ?>
 						
 						<?php if (get_sub_field('gallery_item_title')): ?>
 						
 							<div class="py-2 px-2 text-center">
-								<h4><a href="<?php the_sub_field('gallery_item_link'); ?>"><?php echo (get_sub_field('gallery_item_title') ? the_sub_field('gallery_item_title') : 'Placeholder Title'); ?></a></h4>
+								<h4>
+									<?php if ($link): ?>
+					
+										<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
+								
+									<?php endif; ?>
+									
+									<?php echo (get_sub_field('gallery_item_title') ? the_sub_field('gallery_item_title') : 'Placeholder Title'); ?>
+								
+									<?php if ($link): ?>
+										
+										</a>
+										
+									<?php endif; ?>	
+								
+								</h4>
 								
 								<?php if (get_sub_field('gallery_item_subtitle')): ?>
 								
