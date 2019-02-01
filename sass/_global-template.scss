@@ -164,6 +164,17 @@ h3.alt, h4.alt {
 .no-margin p:last-child {
 	margin-bottom: 0;
 }
+.list-dash {
+	border-right: 1px solid $gray-300;
+	margin-right: .5em;
+	padding-right: .5em;
+	
+	&:last-child {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+}
 /* 
 ** Header Area 
 */
@@ -726,14 +737,17 @@ h3.alt, h4.alt {
 						label {
 							font-weight: bold;
 							font-size: 15px;
+							line-height: 1.2em;
 							color: $brand-primary;
 							padding: 0px;
 							border: 1px solid $gray-200; 
 							cursor: pointer;
 						    z-index: 90;
+						    height: 100%;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
 						    text-align: center;
-						    line-height: 60px;
-						    height: 60px;
 						}
 						label:hover {
 							background-color: $brand-primary;

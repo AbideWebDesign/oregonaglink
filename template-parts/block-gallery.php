@@ -18,7 +18,31 @@
 							
 							<?php if(get_sub_field('gallery_item_subtitle')): ?>
 							
-								<p class="mb-0 text-sm"><?php the_sub_field('gallery_item_subtitle'); ?></p>
+								<p class="mb-0 text-sm">
+									
+									<?php the_sub_field('gallery_item_subtitle'); ?>
+									
+									<?php if (get_sub_field('gallery_item_phone') || get_sub_field('gallery_item_email')): ?>
+									
+										<ul class="mb-0 list-inline list-dash">
+											
+											<?php if (get_sub_field('gallery_item_phone')): ?>
+												
+												<li class="list-inline-item"><?php the_sub_field('gallery_item_phone'); ?></li>
+											
+											<?php endif; ?>
+											
+											<?php if (get_sub_field('gallery_item_email')): ?>
+												
+												<li class="list-inline-item"><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a></li>
+											
+											<?php endif; ?>
+											
+										</ul>
+									
+									<?php endif; ?>
+									
+								</p>
 							
 							<?php endif; ?>
 							
@@ -50,8 +74,32 @@
 								
 								<?php if (get_sub_field('gallery_item_subtitle')): ?>
 								
-									<p class="mb-0 text-sm"><?php the_sub_field('gallery_item_subtitle'); ?></p>
-								
+									<p class="mb-0 text-sm">
+									
+										<?php the_sub_field('gallery_item_subtitle'); ?>
+										
+										<?php if (get_sub_field('gallery_item_phone') || get_sub_field('gallery_item_email')): ?>
+										
+											<ul class="mb-0 list-inline list-dash">
+												
+												<?php if (get_sub_field('gallery_item_phone')): ?>
+													
+													<li class="list-inline-item"><?php the_sub_field('gallery_item_phone'); ?></li>
+												
+												<?php endif; ?>
+												
+												<?php if (get_sub_field('gallery_item_email')): ?>
+													
+													<li class="list-inline-item"><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a></li>
+												
+												<?php endif; ?>
+												
+											</ul>
+										
+										<?php endif; ?>
+										
+									</p>								
+
 								<?php endif; ?>
 								
 							</div>
