@@ -1,0 +1,97 @@
+{
+    "key": "group_5c37aa0240a6e",
+    "title": "Fields - Footer Top",
+    "fields": [
+        {
+            "key": "field_5c37aa499267b",
+            "label": "Footer Top",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c37aa07cd6cf",
+            "label": "Footer Top Text",
+            "name": "footer_top_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We are a private, non-profit volunteer membership organization \u0003dedicated to growing  agriculture in Oregon through education and \u0003promotion; bridging the gap  between urban and rural Oregonians.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c37aa1ccd6d0",
+            "label": "Footer Top Box Title",
+            "name": "footer_top_box_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Email Newsletter Signup",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c38df95d1d10",
+            "label": "Footer Top Box Text",
+            "name": "footer_top_box_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "When you sign up you'll become a member of our email list, we will \u0003keep you informed with the latest updates and progress reports.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1549036906
+}

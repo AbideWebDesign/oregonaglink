@@ -1,0 +1,66 @@
+{
+    "key": "group_5c3b8c616590a",
+    "title": "Options - Call to Action Blocks",
+    "fields": [
+        {
+            "key": "field_5c3b8c85f60f0",
+            "label": "Call to Action Blocks",
+            "name": "call_to_action_blocks",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Block",
+            "sub_fields": [
+                {
+                    "key": "field_5c3b8c99f60f1",
+                    "label": "Call to Action Block",
+                    "name": "call_to_action_block",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5c3a45bd37ebb"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-call-to-action-blocks"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1549036921
+}
