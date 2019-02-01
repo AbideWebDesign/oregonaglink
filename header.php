@@ -114,7 +114,7 @@
 							<a href="https://twitter.com/oregonaglink" target="_blank"><i class="fab fa-twitter"></i></a>
 						</li>
 						<li class="list-inline-item">
-							<a href="https://www.instagram.com/adoptafarmer/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.instagram.com/oregonaglink/" target="_blank"><i class="fab fa-instagram"></i></a>
 						</li>
 						<li class="list-inline-item">
 							<a href="https://www.pinterest.com/adoptafarmer/" target="_blank"><i class="fab fa-pinterest"></i></a>
