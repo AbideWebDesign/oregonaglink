@@ -20,26 +20,22 @@
 							
 								<p class="mb-0 text-sm">
 									
-									<?php the_sub_field('gallery_item_subtitle'); ?>
+									<strong><?php the_sub_field('gallery_item_subtitle'); ?></strong>
 									
 									<?php if (get_sub_field('gallery_item_phone') || get_sub_field('gallery_item_email')): ?>
 									
-										<ul class="mb-0 list-inline list-dash">
-											
 											<?php if (get_sub_field('gallery_item_phone')): ?>
 												
-												<li class="list-inline-item"><?php the_sub_field('gallery_item_phone'); ?></li>
+												<br><?php the_sub_field('gallery_item_phone'); ?>
 											
 											<?php endif; ?>
 											
 											<?php if (get_sub_field('gallery_item_email')): ?>
 												
-												<li class="list-inline-item"><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a></li>
+												<br><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a>
 											
 											<?php endif; ?>
-											
-										</ul>
-									
+																				
 									<?php endif; ?>
 									
 								</p>
@@ -76,29 +72,25 @@
 								
 									<p class="mb-0 text-sm">
 									
-										<?php the_sub_field('gallery_item_subtitle'); ?>
+										<strong><?php the_sub_field('gallery_item_subtitle'); ?></strong>
 										
 										<?php if (get_sub_field('gallery_item_phone') || get_sub_field('gallery_item_email')): ?>
 										
-											<ul class="mb-0 list-inline list-dash">
-												
 												<?php if (get_sub_field('gallery_item_phone')): ?>
 													
-													<li class="list-inline-item"><?php the_sub_field('gallery_item_phone'); ?></li>
+													<br><?php the_sub_field('gallery_item_phone'); ?>
 												
 												<?php endif; ?>
 												
 												<?php if (get_sub_field('gallery_item_email')): ?>
 													
-													<li class="list-inline-item"><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a></li>
+													<br><a href="mailto:<?php the_sub_field('gallery_item_email'); ?>"><?php the_sub_field('gallery_item_email'); ?></a>
 												
 												<?php endif; ?>
-												
-											</ul>
-										
+																					
 										<?php endif; ?>
 										
-									</p>								
+									</p>
 
 								<?php endif; ?>
 								
