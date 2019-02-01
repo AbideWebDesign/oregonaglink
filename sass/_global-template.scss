@@ -873,6 +873,10 @@ h3.alt, h4.alt {
 .gallery-block {
 	h4 {
 		margin-bottom: 0;
+		
+		a {
+			color: $brand-green;
+		}
 	}
 	p {
 		margin-top: .5em;

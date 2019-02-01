@@ -1,3 +1,5 @@
+<?php $include_image = get_sub_field('gallery_with_image'); ?>
+
 <div class="gallery-block">
 	
 	<?php if (get_sub_field('gallery_type') == 'Profile'): ?>
@@ -10,7 +12,7 @@
 					<div class="content-block h-100">
 						<div class="py-1 px-2 text-center">
 							
-							<?php if (get_sub_field('gallery_with_image')): ?>
+							<?php if ($include_image): ?>
 							
 								<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
 								
@@ -64,8 +66,8 @@
 				
 				<div class="col-sm-6 col-md-4 col-lg-3 align-self-stretch mb-2">
 					<div class="content-block h-100">
-						
-						<?php if (get_sub_field('gallery_with_image')): ?>
+
+						<?php if ($include_image): ?>
 						
 							<?php $image_id = (get_sub_field('gallery_item_image') ? get_sub_field('gallery_item_image') : '3205'); ?>
 							
