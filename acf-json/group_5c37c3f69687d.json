@@ -350,6 +350,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-simple.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -373,5 +380,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1549036927
+    "modified": 1566594025
 }

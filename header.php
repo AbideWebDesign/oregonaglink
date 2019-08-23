@@ -9,6 +9,7 @@
  * @package oregonaglink
  */
 
+$logo = get_field('logo', 'options');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -142,7 +143,7 @@
 	</div>
 	<div id="nav-main" class="container">
 		<nav class="navbar navbar-expand-lg navbar-light">	
-			<a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo home_url('/wp-content/themes/oregonaglink/assets/img/logo-oregon-aglink.png'); ?>" class="logo" /></a>
+			<a class="navbar-brand" href="<?php echo home_url(); ?>"><?php echo wp_get_attachment_image($logo['id'], 'full', false, array('class'=>'img-fluid logo')); ?></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-primary" aria-controls="menu-primary" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

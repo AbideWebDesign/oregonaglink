@@ -30,13 +30,18 @@ get_header();
 
 <div class="py-3 bg-light">
 	<div class="container">
+		<div class="row">
+			<div class="col">
+				<?php if ( function_exists('yoast_breadcrumb') ): yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ); endif; ?>
+			</div>
+		</div>
 		
 		<?php
-		while (have_posts()) :
+		while ( have_posts() ):
 			
 			the_post();
 			
-			if(is_tribe_calendar()) {			
+			if ( is_tribe_calendar() ) {			
 				
 				get_template_part('template-parts/content', 'tribe-events');
 			
@@ -52,14 +57,14 @@ get_header();
 	</div>
 </div>
 
-<?php if (get_field('include_cta_block')): ?>
+<?php if ( get_field('include_cta_block') ): ?>
 
 	<?php get_template_part('template-parts/block', 'cta'); ?>
 
 <?php endif; ?>
 
 
-<?php if (get_field('include_bottom_page_links')): ?>
+<?php if ( get_field('include_bottom_page_links') ): ?>
 	
 	<?php get_template_part('template-parts/block', 'sibling-pages'); ?>
 
@@ -69,6 +74,4 @@ get_header();
 	
 <?php endif; ?>
 
-<?php
-	
-get_footer();
+<?php get_footer(); ?>

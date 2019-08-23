@@ -28,7 +28,7 @@
 
 	<?php $bg_img = wp_get_attachment_image_src(get_field('hero_banner_image'), 'hero banner', false); ?>
 
-	<div id="section-hero-banner" class="bg-img bg-img-lg text-center" style="background-image: url('<?php echo $bg_img[0]; ?>')">
+	<div id="section-hero-banner" class="bg-img bg-img-lg text-center">
 		<div class="bg-overlay"></div>
 		<div class="bg-img-content py-4 text-center">
 			<h4 class="mb-1 text-white"><?php the_field('header_banner_sub_title'); ?></h4>
