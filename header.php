@@ -17,6 +17,7 @@ $logo = get_field('logo', 'options');
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="icon" type="image/png" href="<?php the_field('favicon', 'options'); ?>" />
 
 	<?php wp_head(); ?>
 	<script type="text/javascript">
@@ -95,7 +96,7 @@ $logo = get_field('logo', 'options');
 	<div id="nav-top" class="bg-primary d-none d-sm-none d-md-block">
 		<div class="container">
 			<div id="nav-top-container" class="d-flex justify-content-md-center justify-content-lg-end">
-				<div id="nav-top-link" class="py-half pr-1">
+				<div id="nav-top-link" class="py-half">
 					<?php 
 						wp_nav_menu( array( 
 							'theme_location' => 'menu-2', 

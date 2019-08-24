@@ -17,7 +17,8 @@ $logo = get_field('logo', 'options');
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="icon" type="image/png" href="<?php the_field('favicon', 'options'); ?>" />
+	
 	<?php wp_head(); ?>
 	
 </head>
@@ -26,8 +27,8 @@ $logo = get_field('logo', 'options');
 	
 <div id="nav-main-simple" class="container">
 	<div class="row">
-		<div id="nav-main" class="col mb-2">
-			<a class="navbar-brand" href="<?php echo home_url(); ?>"><?php echo wp_get_attachment_image($logo['id'], 'full', false, array('class'=>'img-fluid logo')); ?></a>
+		<div id="nav-main" class="col my-2">
+			<a class="navbar-brand" href="https://aglink.org"><?php echo wp_get_attachment_image($logo['id'], 'full', false, array('class'=>'img-fluid logo')); ?></a>
 		</div>
 	</div>
 </div>
