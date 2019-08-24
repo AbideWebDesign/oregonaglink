@@ -18,6 +18,15 @@ $logo = get_field('logo', 'options');
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" type="image/png" href="<?php the_field('favicon', 'options'); ?>" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146403986-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-146403986-1');
+	</script>
 
 	<?php wp_head(); ?>
 	<script type="text/javascript">
