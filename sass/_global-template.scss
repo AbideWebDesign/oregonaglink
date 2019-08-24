@@ -9,6 +9,10 @@ body a {
 }
 .navbar {
 	padding: 2rem 0;
+	
+	@media(max-width: 768px) {
+		padding: 1rem 0;
+	}
 }
 .py-half {
 	padding-top: .5em;
@@ -195,7 +199,7 @@ h3.alt, h4.alt {
 	#nav-top-link {
 		li {
 			border-right: 1px solid $brand-green-light;
-			padding-right: 1em;
+			padding-right: .5rem;
 		}
 		li:last-child {
 			border-right: none;
@@ -216,6 +220,13 @@ h3.alt, h4.alt {
 		font-weight: 600;
 		margin-right: 3rem;
 		
+		@media (max-width: 1024px) {
+			margin-right: 1rem;
+		}
+		@media (max-width: 786px) {
+			margin-right: 0rem;
+		}
+
 		& > a {
 			margin-top: 4px;
 			border-bottom: 4px solid transparent;
@@ -245,8 +256,10 @@ h3.alt, h4.alt {
 		border-bottom-color: $gray-300;
 	}
 	.show > .dropdown-menu {
+/*
 		left: 50%;
 		transform: translateX(-50%);
+*/
 	}
 	.dropdown-menu.show {
 		margin-top: 1em;
@@ -267,10 +280,10 @@ h3.alt, h4.alt {
 		}
 	}
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	#nav-main {
 		.navbar-collapse {
-			margin: 2em -15px -2em -15px;
+			margin: 2em -15px -2em -1em;
 			.navbar-nav {
 				background-color: $gray-300;
 				-webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.1);
