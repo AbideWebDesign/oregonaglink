@@ -204,7 +204,6 @@ h3.alt, h4.alt {
 		}
 		li:last-child {
 			border-right: none;
-			padding-right: 0;
 		}
 	}
 	#nav-top-container > div {
@@ -257,10 +256,13 @@ h3.alt, h4.alt {
 		border-bottom-color: $gray-300;
 	}
 	.show > .dropdown-menu {
-/*
 		left: 50%;
 		transform: translateX(-50%);
-*/
+		
+		@media(max-width: 768px) {
+			left: 0;
+			transform: none;
+		}
 	}
 	.dropdown-menu.show {
 		margin-top: 1em;
