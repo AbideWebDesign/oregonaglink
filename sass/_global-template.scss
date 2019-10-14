@@ -808,6 +808,24 @@ h3.alt, h4.alt {
 		display: block;
 		@extend .img-fluid;
 	}
+	.alignleft {
+		float: left;
+		margin-right: 1em;
+	}
+	.alignright {
+		float: right;
+		margin-left: 1em;
+	}
+	.aligncenter {
+		margin: auto;
+	}
+	@media (max-width: 576px) {
+		.alignleft, .alignright, .aligncenter {
+			float: none;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
 }
 @media (max-width: 767px) {
 	.content-block-blog {

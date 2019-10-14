@@ -36,7 +36,7 @@ get_header();
 		</div>
 	</div>
 </div>
-<div class="py-3 bg-light">
+<div class="pt-1 pb-3 bg-light">
 	<div class="container">
 		<?php
 		while ( have_posts() ) :
