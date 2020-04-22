@@ -43,7 +43,11 @@ body a {
 body ol, body ul, body dl {
 	@extend p;
 }
-
+.wp-caption-text {
+	font-size: 12px;
+    background-color: #ddd;
+    padding: .5em;
+}
 /* 
 ** Backgrounds
 */
@@ -178,6 +182,9 @@ h3.alt, h4.alt {
 		padding: 0;
 		margin: 0;
 	}
+}
+.moretag {
+	font-weight: bold;
 }
 /* 
 ** Header Area 

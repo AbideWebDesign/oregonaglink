@@ -91,6 +91,7 @@ add_action( 'wp_enqueue_scripts', 'oregonaglink_scripts' );
 /**
  * Image sizes
  */
+add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(360, 270, true);
 add_image_size('col-3', 295);
 add_image_size('col-4', 434);
@@ -239,6 +240,28 @@ function show_pagination_links() {
             'type'      => 'list'
         )
     );
+}
+
+/**
+ * Removes tags from blog posts
+ */
+add_action( 'init', 'unregister_tags' );
+
+function unregister_tags() {
+	
+    unregister_taxonomy_for_object_type( 'post_tag', 'post' );
+    
+}
+
+/**
+ * Change excerpt styling
+ */
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function new_excerpt_more( $more ) {
+	
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '">Read More</a>';
+	
 }
 
 /**
