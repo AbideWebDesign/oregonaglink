@@ -1128,10 +1128,7 @@ button.icon-search.icon-replacement:before {width:auto;}
 	@extend .btn;
 	@extend .btn-primary;
 }
-.gform_wrapper .gfield_error {
-	.gfield_label {
-		@extend .alert-danger;
-	}	
+.gform_wrapper .gfield_error {	
 	input,
 	select,
 	textarea {
