@@ -1279,3 +1279,13 @@ span.ginput_card_security_code_icon {
 		}	
 	}
 }
+
+/* Coupon Add-on */
+.gform_wrapper input#gf_coupon_button.button {
+	margin-left: 0;
+	margin-top: 1em;
+}
+.gf_coupon_item {
+	background-color: transparent !important;
+	color: $brand-primary !important;
+}

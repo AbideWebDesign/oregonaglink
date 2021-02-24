@@ -8,6 +8,7 @@
  */
 
 get_header();
+
 ?>
 <div class="py-4 bg-primary">
 	<div class="container">
