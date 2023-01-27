@@ -43,6 +43,12 @@
 			<?php get_template_part('template-parts/block', 'gallery'); ?>
 		
 		<?php endif; ?>
+		
+		<?php if(get_row_layout() == 'code'): ?>
+
+			<?php get_template_part('template-parts/block', 'code'); ?>
+		
+		<?php endif; ?>
 	
 	<?php endwhile; ?>
 	
