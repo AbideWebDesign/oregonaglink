@@ -1287,7 +1287,7 @@ span.ginput_card_security_code_icon {
 		margin-bottom: 1em;
 	}
 	.gsection_title {
-		margin-top: 1em;
+		margin-top: 1em !important;
 	}
 	#field_18_3 {
 		margin-bottom: 0;
@@ -1303,6 +1303,16 @@ span.ginput_card_security_code_icon {
 		font-size: 20px;
 		font-weight: bold;
 		padding: 0;
+	}
+	.ginput_container_name {
+		display: flex;
+		
+		.gform-grid-col {
+			width: 50%;	
+		}
+		.name_last {
+			padding-left: .5em;
+		}
 	}
 }
 /* Coupon Add-on */
