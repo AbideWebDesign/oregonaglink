@@ -1256,6 +1256,11 @@ span.ginput_card_security_code_icon {
 .gform_required_legend {
 	display: none;
 }
+.gfield--type-stripe_creditcard-payment-element {
+	.ginput_full {
+		margin-bottom: 0 !important;
+	}
+}
 #gform_1 {
 	.gform_body {
 		width: 77%;
