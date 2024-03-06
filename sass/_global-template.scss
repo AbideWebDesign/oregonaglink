@@ -1280,8 +1280,14 @@ span.ginput_card_security_code_icon {
 	}
 }
 #gform_wrapper_18 {
-	.gfield--type-html, .gfield--type-product {
+	#field_18_3 {
+		margin-bottom: 0;
+	}
+	.gfield--type-html, .gfield--input-type-singleproduct {
 		display: inline-block;
+	}
+	.gfield--input-type-singleproduct {
+		margin-bottom: .5em;
 	}
 	.gfield--type-html {
 		margin-bottom: 0 !important;
