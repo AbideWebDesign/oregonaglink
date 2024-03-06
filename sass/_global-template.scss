@@ -1279,7 +1279,19 @@ span.ginput_card_security_code_icon {
 		}	
 	}
 }
-
+#gform_wrapper_18 {
+	.gfield--type-html, .ginput_product_price {
+		display: inline-block;
+	}
+	.gfield--type-html {
+		margin-bottom: 0 !important;
+	}
+	.ginput_product_price {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0 0 0 .5em;
+	}
+}
 /* Coupon Add-on */
 body .gform_wrapper input#gf_coupon_button.button {
 	margin-left: 0;
