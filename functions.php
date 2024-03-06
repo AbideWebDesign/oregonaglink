@@ -6,12 +6,6 @@
  *
  * @package oregonaglink
  */
-require WP_CONTENT_DIR . '/plugins/plugin-update-checker-master/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/AbideWebDesign/oregonaglink',
-	__FILE__,
-	'oregonaglink'
-);
 if ( ! function_exists( 'oregonaglink_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -280,3 +274,11 @@ function is_tribe_calendar() { // detect if we're on an Events Calendar page
 		return true;
 	else return false;
 }
+
+add_filter( 'acf/the_field/allow_unsafe_html', function( $allowed, $selector ) {
+    
+    return true;
+    
+    return $allowed;
+    
+}, 10, 2);
