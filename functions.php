@@ -236,6 +236,61 @@ function show_pagination_links() {
     );
 }
 
+/*
+ * Add custom admin styles
+ */
+add_action('wp_head', 'admin_bar_style_override');
+add_action('admin_head', 'admin_bar_style_override');
+
+function admin_bar_style_override() {
+	
+	if ( is_user_logged_in() ) {
+		
+		?>
+		
+		<style>
+		
+			#wp-link .link-button { 
+				padding: 3px 0 0; 
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			#wp-link .link-button label {
+				max-width: 70%;
+				padding-left: 4px;
+			}
+			.has-text-field #wp-link .query-results {
+				top: 230px;
+			}
+			.yoast-notification, #edittag h2, .term-description-wrap, .term-parent-wrap, .term-name-wrap .description, .term-slug-wrap .description, .post-attributes-help-text, .menu-order-label-wrapper, #menu_order, #directory-categorydiv, .ac-message, #ac-pro-version, #direct-feedback, .installer-plugin-update-tr, .plugins .dashicons, .shortpixel-notice, #emr-news, .wrap.emr_upload_form .option-flex-wrapper, .emr_upload_form #message, .user-syntax-highlighting-wrap {
+				display: none !important;
+			}
+			#tribe-events-status, #tribe_events_event_options, form#your-profile > h3, form#your-profile .user-profile-picture, form#your-profile .user-description-wrap, form#your-profile .user-display-name-wrap, form#your-profile .user-nickname-wrap, form#your-profile .show-admin-bar, .user-comment-shortcuts-wrap, form#your-profile .yoast-settings, form#your-profile .user-rich-editing-wrap, form#your-profile .user-admin-color-wrap, form#your-profile .user-url-wrap, form#your-profile .user-facebook-wrap, form#your-profile .user-instagram-wrap, form#your-profile .user-linkedin-wrap, form#your-profile .user-myspace-wrap, form#your-profile .user-pinterest-wrap, form#your-profile .user-soundcloud-wrap, form#your-profile .user-tumblr-wrap, form#your-profile .user-twitter-wrap, form#your-profile .user-youtube-wrap, form#your-profile .user-wikipedia-wrap  {
+				display: none;
+			}
+			#your-profile h2 {
+				display: none;
+			}
+			#edittag {
+				max-width: 90% !important;
+			}
+			.acf-actions {
+				text-align: left;
+			}
+			.media-modal #wpmf-breadcrumb { position: relative; }
+			.acf-escaped-html-notice {
+				display: none;
+			}
+			
+	<?php
+		
+	}
+	
+	echo "</style>";
+	
+}
+
 /**
  * Removes tags from blog posts
  */
