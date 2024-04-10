@@ -1323,6 +1323,17 @@ span.ginput_card_security_code_icon {
 			padding-left: .5em;
 		}
 	}
+	#field_18_30 {
+		.gfield_label {
+			margin-top: 1em;
+			margin-bottom: 0;
+		}
+	}
+	#ginput_product_price_18_30 {
+		label {
+			display: none;
+		}
+	}
 }
 /* Coupon Add-on */
 body .gform_wrapper input#gf_coupon_button.button {
