@@ -336,3 +336,12 @@ add_filter( 'acf/the_field/allow_unsafe_html', function( $allowed, $selector ) {
     return $allowed;
     
 }, 10, 2);
+
+/* 
+ * Gravity Forms
+ */
+add_filter( 'gform_default_styles', function( $styles ) {
+        
+    return '{"theme":"","inputSize":"lg","inputBorderRadius":"6","inputBorderColor":"rgba(18, 18, 18, 0.8)","inputBackgroundColor":"#fff","inputColor":"#112337","inputPrimaryColor":"#194C2C","labelFontSize":"18","labelColor":"#112337","descriptionColor":"#585e6a","buttonPrimaryBackgroundColor":"#194C2C","buttonPrimaryColor":"#fff"}';
+
+} );
