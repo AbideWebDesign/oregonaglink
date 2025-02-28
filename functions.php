@@ -314,14 +314,6 @@ function new_excerpt_more( $more ) {
 }
 
 /**
- * Plugin: Gravity Form
- */
-function spinner_url($image_src, $form) {
-    return "";
-}
-add_filter("gform_ajax_spinner_url_1", "spinner_url", 10, 2);
-
-/**
  * Plugin: Tribe Events Calendar
  */
 function is_tribe_calendar() { // detect if we're on an Events Calendar page
