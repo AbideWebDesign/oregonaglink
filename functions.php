@@ -60,7 +60,12 @@ add_action( 'after_setup_theme', 'oregonaglink_setup' );
  * Enqueue scripts and styles.
  */
 function oregonaglink_scripts() {
+	
 	$theme = wp_get_theme();
+	
+	$theme_version = $the_theme->get( 'Version' );
+	
+	$css_version = $theme_version . '.' . filemtime( get_template_directory() . 'style.css' );
 	
 	wp_deregister_script( 'jquery' );
 	
@@ -74,12 +79,14 @@ function oregonaglink_scripts() {
 	
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
-	wp_enqueue_style( 'oregonaglink-style', get_stylesheet_uri(), '', $theme->version );
+	wp_enqueue_style( 'oregonaglink-style', get_stylesheet_uri(), '', $css_version );
 	
 	wp_enqueue_style( 'oregonaglink-font-1', 'https://fonts.googleapis.com/css?family=Montserrat:400,600' );
 	
 	wp_enqueue_style( 'oregonaglink-font-2', 'https://fonts.googleapis.com/css?family=Arvo:400,700' );
+	
 }
+
 add_action( 'wp_enqueue_scripts', 'oregonaglink_scripts' );
 
 /**
