@@ -65,7 +65,7 @@ function oregonaglink_scripts() {
 	
 	$theme_version = $theme->get( 'Version' );
 	
-	$css_version = $theme_version . '.' . filemtime( get_template_directory() . 'style.css' );
+	$css_version = $theme_version . '.' . filemtime( get_template_directory() . '/style.css' );
 	
 	wp_deregister_script( 'jquery' );
 	
